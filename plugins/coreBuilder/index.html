@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=ee_contentContainer">
+    <div>
+        <meta charset="UTF-8"/>
+        <title>Core Builder 0.1</title>
+        <script type="text/javascript" src="lib/jquery-1.9.1.js"/>
+        <script type="text/javascript" src="lib/underscore-min.js"/>
+        <script type="text/javascript" src="lib/backbone-min.js"/>
+        <script type="text/javascript" src="lib/sax.js"/>
+        <script type="text/javascript" src="lib/SAXParser.js"/>
+        <script type="text/javascript" src="lib/shjs/sh_main.min.js"/>
+        <script type="text/javascript" src="lib/shjs/sh_xml.js"/>
+        <script type="text/javascript" src="lib/FileSaver.min.js"/>
+        <link rel="stylesheet" type="text/css" href="lib/shjs/sh_style.css"/>
+        <script type="text/javascript">
+    Array.prototype.remove = function(e) {
+  	var t, _ref;
+  	if ((t = this.indexOf(e)) &gt; -1) {
+  	    return ([].splice.apply(this, [t, t - t + 1].concat(_ref = [])), _ref);
+  	}
+  };
+ var generateUid = function (separator) {
+   <!--/// <summary>
+   ///    Creates a unique id for identification purposes.
+   /// </summary>
+   /// <param name="separator" type="String" optional="true">
+   /// The optional separator for grouping the generated segmants: default "-".    
+   /// </param>-->
+
+   var delim = separator || "-";
+
+   function S4() {
+       return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+   }
+
+   return (S4() + S4() + delim + S4() + delim + S4() + delim + S4() + delim + S4() + S4() + S4());
+};
+ </script>
+        <style type="text/css">
+   body, html, #container {
+     height: 100%;
+   }
+   li {
+     list-style-type: none;
+   }
+    div.column {
+     height:92%;
+    	float:left;
+    	border: 1px solid Black;
+    	padding: 1em;
+    }
+   dl {
+     height: 88%;
+     overflow-y: auto;
+   }
+    dt.has_id {
+    	border: 1px solid Black;
+    	background: #3DBEF5;
+     margin-right: 10px;
+    }
+    dt {
+    	border: 1px solid Black;
+    	background: #F74F58;
+    }
+    dt.selected {
+    	border: 4px Solid Yellow;
+    }
+   #cur_grp {
+     display: none;
+   }
+    #cur_grp header {
+    	font-style: italic;
+    }
+    h2 {
+    	font-size: medium;
+     padding: 1em;
+    }
+   #makeNew {
+     background-color: #89F531;
+   }
+   #save { 
+     display: none; 
+     background-color: #3DBEF5;
+   }
+   #saveall {
+     
+   }
+   .remove {
+     font-size: small;
+     float:right;
+   }
+   #controls {
+     background-color: #DBDBDB;
+   }
+   pre {
+     padding: 1em;
+   }
+   </style>
+    </div>
+    <div id="container">
+        <div id="controls" class="column">
+            <h2>Controls</h2>
+            <button id="makeNew">Create new <em>app</em> entry</button>
+            <button id="save">Save entry to CORE</button>
+            <section id="cur_grp">
+                <header>Selected elements:</header>
+            </section>
+            <dl id="core"/>
+        </div>
+        <div class="column">
+            <h2>CORE</h2>
+            <button id="saveall">Save XML</button>
+            <div id="corexml"/>
+        </div>
+    </div>
+    <script type="text/javascript" src="lib/coreBuilder.js"/>
+</div>
