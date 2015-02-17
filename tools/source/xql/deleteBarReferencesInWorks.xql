@@ -13,7 +13,7 @@ declare namespace xlink="http://www.w3.org/1999/xlink";
 let $sourceID := request:get-parameter('sourceID', '')
 let $measureID := request:get-parameter('measureID', '')
 let $worksColl := '/db/contents/works'
-let $works := xcollection($worksColl)//mei:source/mei:extptr[@xlink:href eq concat('xmldb:exist:///db/contents/sources/', $sourceID , '.xml')]/root()
+let $works := collection($worksColl)//mei:source/mei:extptr[@xlink:href eq concat('xmldb:exist:///db/contents/sources/', $sourceID , '.xml')]/root()
 
 return (
 
