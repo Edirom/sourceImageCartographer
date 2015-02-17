@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="xar" name="EdiromEditor">
-    <property name="project.version" value="0.1"/>
-    <property name="project.app" value="EdiromEditor"/>
+<project default="xar" name="edirom-sourceImageCartographer">
+    <property name="project.version" value="0.1.0-beta"/>
+  <property name="project.app" value="edirom-sourceImageCartographer"/>
     <property name="build.dir" value="build"/>
     <target name="xar">
         <mkdir dir="${build.dir}"/>
