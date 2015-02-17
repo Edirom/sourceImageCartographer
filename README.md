@@ -35,3 +35,7 @@ With the following sub-collections:
 If you want a source to be loaded the uri parameter has to be submitted in the window URL, e.g.:
 
 ``http://localhost:8080/exist/apps/edirom/sourceImageCartographer/index.html?uri=/contents/sources/A_page127.xml``
+
+# license
+
+This version of edirom:sourceImageCartographer is based on the republished files of the original EdiromEditor Java application that were republished in an early stage of Edirom Online and thus is licensed accordingly under the same license terms as Edirom Online Edirom:sourceImageCartographer is released to the public under the terms of the GNU GPL v.3 open source license.
