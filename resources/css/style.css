@@ -1,0 +1,15 @@
+/* Application styles could go here */
+
+#content{
+  width:100%;
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: -120px;
+}
+
+.contentMax{
+  top: 120px !important; 
+}
