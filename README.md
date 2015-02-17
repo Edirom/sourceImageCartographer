@@ -29,3 +29,9 @@ With the following sub-collections:
 ``works`` for edirom-work files
 
 ``sources`` for edirom-source files
+
+# use
+
+If you want a source to be loaded the uri parameter has to be submitted in the window URL, e.g.:
+
+``http://localhost:8080/exist/apps/edirom/sourceImageCartographer/index.html?uri=/contents/sources/A_page127.xml``
