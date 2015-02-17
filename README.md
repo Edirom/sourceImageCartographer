@@ -4,6 +4,7 @@ functionality checked:
 
 * load source XML
 * delete measure
+* add measure (using shift+click)
 * save to db
 
 
