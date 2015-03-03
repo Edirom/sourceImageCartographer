@@ -38,4 +38,4 @@ If you want a source to be loaded the uri parameter has to be submitted in the w
 
 # license
 
-This version of edirom:sourceImageCartographer is based on the republished files of the original EdiromEditor Java application that were republished in an early stage of Edirom Online and thus is licensed accordingly under the same license terms as Edirom Online Edirom:sourceImageCartographer is released to the public under the terms of the GNU GPL v.3 open source license.
+This version of edirom:sourceImageCartographer is based on the republished files of the original EdiromEditor Java application that were republished in an early stage of Edirom Online and thus is licensed accordingly under the same license terms as Edirom Online Edirom:sourceImageCartographer is released to the public under the terms of the GNU GPL v.3 open source license, that can bw found online at http://www.gnu.org/copyleft/gpl.html and is included in this repository as [gpl.txt](gpl.txt)
