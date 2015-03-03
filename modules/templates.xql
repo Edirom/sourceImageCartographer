@@ -5,7 +5,7 @@ module namespace templates="http://exist-db.org/xquery/templates";
 (:~
  : HTML templating module
 :)
-import module namespace config="http://exist-db.org/xquery/apps/config" at "config.xqm";
+import module namespace config="http://www.edirom.de/apps/sourceImageCartographer/config" at "config.xqm";
 
 (:~
  : Start processing the provided content using the modules defined by $modules. $modules should
