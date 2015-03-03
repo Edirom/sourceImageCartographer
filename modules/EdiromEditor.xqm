@@ -28,7 +28,7 @@ module namespace ee = "http://www.edirom.de/xquery/EdiromEditor";
 
 import module namespace functx="http://www.functx.com" at 'functx-1.0-nodoc-2007-01.xq';
 import module namespace templates="http://exist-db.org/xquery/templates" at "templates.xql";
-import module namespace config="http://exist-db.org/xquery/apps/config"; 
+import module namespace config="http://www.edirom.de/apps/sourceImageCartographer/config" at "config.xqm";
 
 (:~
  : This function generates the sidenav
@@ -142,23 +142,23 @@ declare function ee:getEditorType($uri as xs:string) as xs:string {
         else('')
 };
 
-declare function ee:getMeasureCoordTitle($node as node(), $params as element(parameters)?, $model as item()*) {
+declare function ee:getMeasureCoordTitle($node as node(), $model as map(*)) {
     let $uri := request:get-parameter('uri', '')
     return
         templates:process(
         
-            <h3>{$uri}</h3>,
+            <h3 xmlns="http://www.w3.org/1999/xhtml">{$uri}</h3>,
             $model
         )
 };
 
 
-declare function ee:getMeasureCoordVariables($node as node(), $params as element(parameters)?, $model as item()*) {
+declare function ee:getMeasureCoordVariables($node as node(), $model as map(*)) {
     
     let $uri := request:get-parameter('uri', '')
     return
 
-    <div>
+    <div xmlns="http://www.w3.org/1999/xhtml">
         <input type="hidden" id="measureCoordUri" value="{$uri}"/>
     </div>
 };
