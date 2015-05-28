@@ -16,7 +16,7 @@ At the moment sourceImageCartographer expects the facsimile images being served 
 
 ``/digilib/Scaler/' + this.facsimileViewer.getFacsimilePath()``
 
-N.B. if you want to change this, you should change it in DigilibViewer.js lines 149 and 151
+N.B. if you want to change this, you should change it in DigilibViewer.js lines 148 and 150 (-->  https://github.com/Edirom/sourceImageCartographer/blob/develop/tools/main/js/DigilibViewer.js#L1148
 
 ### xml
 
