@@ -32,6 +32,8 @@ With the following sub-collections:
 
 # use
 
+N.B. Please use firefox browser!
+
 If you want a source to be loaded the uri parameter has to be submitted in the window URL, e.g.:
 
 ``http://localhost:8080/exist/apps/edirom/sourceImageCartographer/index.html?uri=/contents/sources/A_page127.xml``
