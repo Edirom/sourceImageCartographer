@@ -59,7 +59,7 @@ let $work := $expression/ancestor::mei:work[1]:)
 
  
 return (
-    concat('this.setName("', replace($source/mei:titleStmt/data(mei:title), '"', '\\"'), '");'),
+    concat('this.setName("', replace($source/mei:titleStmt/mei:title[1], '"', '\\"'), '");'),
     concat('this.setSignature("', replace($source/data(mei:identifier[@type eq 'siglum']), '"', '\\"'), '");'),
     concat('this.setComposer("', replace($source//mei:fileDesc/mei:titleStmt/mei:respStmt/data(mei:persName[@role eq 'composer']), '"', '\\"'), '");'),
     string('this.setWorkName("Work");'),
