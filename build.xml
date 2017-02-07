@@ -3,6 +3,10 @@
     <property name="project.version" value="0.1.0-beta"/>
     <property name="project.app" value="edirom-sourceImageCartographer"/>
     <property name="build.dir" value="build"/>
+    
+    <target name="clean">
+        <delete dir="${build.dir}" includeemptydirs="true"/>
+    </target>
     <target name="xar">
         <mkdir dir="${build.dir}"/>
         <zip basedir="." destfile="${build.dir}/${project.app}-${project.version}.xar" excludes="${build.dir},${build.dir}/*,"/>
