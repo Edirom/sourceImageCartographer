@@ -17,23 +17,11 @@ By default _sourceImageCartographer_ expects images being served by digilig from
 
 If you want to change this you can supply a paramter to the build task as will be described below.
 
-## xml collection
-
-The XML-Data is expected to reside in the following collection in your eXist-db:
-
-```/db/contents/```
-
-With the following sub-collections:
-
-`works` for edirom-work files
-
-`sources` for edirom-source files
-
 ## usage
 
 Please use firefox browser, with other browsers the user interface will not work properly.
 
-If you want a source to be loaded you have to submit a `uri` parameter in the window URL, e.g.:
+Your data can be in any collection of the eXist-db. If you want a source to be loaded you have to submit a `uri` parameter in the window URL. The `uri` parameter has to be the absolute path in the eXist-db `db`-folder, e.g.:
 
 ```http://localhost:8080/exist/apps/edirom/sourceImageCartographer/index.html?uri=/contents/sources/A_page127.xml```
 
