@@ -15,6 +15,7 @@
             <fileset dir="." excludes="${build.dir}, ${build.dir}/**, ${build.dir}-xar, ${build.dir}-xar/**, build.xml, README.md"/>
         </copy>
         <replace file="${build.dir}/tools/main/js/DigilibViewer.js" token="DIGILIB-SERVER" value="${digilib.server}" preservelastmodified="true" summary="true" encoding="UTF-8"/>
+        <replace file="${build.dir}/expath-pkg.xml" token="VERSION" value="${project.version}" preservelastmodified="true" summary="true" encoding="UTF-8"/>
         <mkdir dir="${build.dir}-xar"/>
         <zip basedir="${build.dir}" destfile="${build.dir}-xar/${project.app}-${project.version}.xar" excludes="${build.dir},${build.dir}/**,${build.dir}-xar,${build.dir}-xar/**"/>
     </target>
