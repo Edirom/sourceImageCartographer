@@ -145,9 +145,9 @@ de.edirom.server.main.DigilibViewer = Class.create({
 
         var path;
         if (this.key != 0)
-            path = '/digilib/Scaler/' + this.facsimileViewer.getFacsimilePath() + '?dw=' + dw + '&amp;dh=' + dh + '&amp;wx=' + wx + '&amp;wy=' + wy + '&amp;ww=' + ww + '&amp;wh=' + wh + '&amp;mo=fit&amp;key=' + k;
+            path = 'DIGILIB-SERVER/digilib/Scaler/' + this.facsimileViewer.getFacsimilePath() + '?dw=' + dw + '&amp;dh=' + dh + '&amp;wx=' + wx + '&amp;wy=' + wy + '&amp;ww=' + ww + '&amp;wh=' + wh + '&amp;mo=fit&amp;key=' + k;
         else
-            path = '/digilib/Scaler/' + this.facsimileViewer.getFacsimilePath() + '?dw=' + dw + '&amp;dh=' + dh + '&amp;wx=' + wx + '&amp;wy=' + wy + '&amp;mo=clip&amp;key=' + k;
+            path = 'DIGILIB-SERVER/digilib/Scaler/' + this.facsimileViewer.getFacsimilePath() + '?dw=' + dw + '&amp;dh=' + dh + '&amp;wx=' + wx + '&amp;wy=' + wy + '&amp;mo=clip&amp;key=' + k;
 
         this.images[k][col][row].attr({"src": path, "width": Math.round(dw * Math.pow(2.0, k)), "height": Math.round(dh * Math.pow(2.0, k))});
     },

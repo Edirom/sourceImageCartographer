@@ -1,5 +1,6 @@
-# build-dir
+# build-dirs
 build
+build-xar
 
 # Windows image file caches
 Thumbs.db
