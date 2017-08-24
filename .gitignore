@@ -1,6 +1,20 @@
+# =========================
+# Project Files
+# =========================
+
 # build-dirs
 build
 build-xar
+
+# Dev Environments
+*.xpr
+
+# =========================
+# Operating System Files
+# =========================
+
+# Windows
+# =========================
 
 # Windows image file caches
 Thumbs.db
@@ -18,9 +32,6 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# =========================
-# Operating System Files
-# =========================
 
 # OSX
 # =========================
