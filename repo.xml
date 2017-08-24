@@ -13,5 +13,5 @@
     <target>edirom/sourceImageCartographer</target>
     <prepare>pre-install.xql</prepare>
     <finish/>
-    <permissions xmlns:repo="http://exist-db.org/xquery/repo" password="edirom" user="edirom" group="edirom" mode="rwxrwxr--"/>
+    <permissions xmlns:repo="http://exist-db.org/xquery/repo" user="edirom" group="edirom" mode="rwxr-xr--"/>
 </meta>
