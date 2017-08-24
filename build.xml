@@ -4,7 +4,11 @@
     <property name="project.app" value="edirom-sourceImageCartographer"/>
     <property name="build.dir" value="build"/>
     <property name="digilib.server" value="" />
-    
+
+    <target name="clean">
+        <delete dir="${build.dir}" includeemptydirs="true"/>
+    </target>
+
     <target name="xar">
         <mkdir dir="${build.dir}"/>
         <copy todir="${build.dir}" encoding="UTF-8" overwrite="true">
