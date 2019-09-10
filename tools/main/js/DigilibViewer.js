@@ -134,14 +134,14 @@ de.edirom.server.main.DigilibViewer = Class.create({
         var ww = dw / width;
         var wh = dh / height;
 
-        dw = Math.round(dw * 100) / 100;
-        dh = Math.round(dh * 100) / 100;
+        dw = Math.round(dw * 100000) / 100000;
+        dh = Math.round(dh * 100000) / 100000;
 
-        wx = Math.round(wx * 100) / 100;
-        wy = Math.round(wy * 100) / 100;
+        wx = Math.round(wx * 100000) / 100000;
+        wy = Math.round(wy * 100000) / 100000;
 
-        ww = Math.round(ww * 100) / 100;
-        wh = Math.round(wh * 100) / 100;
+        ww = Math.round(ww * 100000) / 100000;
+        wh = Math.round(wh * 100000) / 100000;
 
         var path;
         if (this.key != 0)
