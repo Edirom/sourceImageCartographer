@@ -66,11 +66,11 @@ declare function local:logout() as empty() {
 };
 
 let $exist-vars := map {
-   'path' := $exist:path,
-   'resource' := $exist:resource,
-   'controller' := $exist:controller,
-   'prefix' := $exist:prefix,
-   'root' := $exist:root
+   'path' : $exist:path,
+   'resource' : $exist:resource,
+   'controller' : $exist:controller,
+   'prefix' : $exist:prefix,
+   'root' : $exist:root
 }
 let $log := util:log-system-out($exist:prefix)
 
