@@ -61,7 +61,7 @@ declare function local:set-user() as element()* {
             ()
 };
 
-declare function local:logout() as empty() {
+declare function local:logout() {
     session:clear()
 };
 
