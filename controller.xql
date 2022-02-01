@@ -61,16 +61,16 @@ declare function local:set-user() as element()* {
             ()
 };
 
-declare function local:logout() as empty() {
+declare function local:logout() {
     session:clear()
 };
 
 let $exist-vars := map {
-   'path' := $exist:path,
-   'resource' := $exist:resource,
-   'controller' := $exist:controller,
-   'prefix' := $exist:prefix,
-   'root' := $exist:root
+   'path' : $exist:path,
+   'resource' : $exist:resource,
+   'controller' : $exist:controller,
+   'prefix' : $exist:prefix,
+   'root' : $exist:root
 }
 let $log := util:log-system-out($exist:prefix)
 
