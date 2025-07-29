@@ -73,7 +73,7 @@ declare function local:current-time() {
     let $day := day-from-dateTime($utc)
     let $hours := hours-from-dateTime($utc)
     let $minutes := minutes-from-dateTime($utc)
-    let $seconds := xs:decimal(replace(seconds-from-dateTime($utc), '\..*', ''))
+    let $seconds := xs:decimal(replace(string(seconds-from-dateTime($utc)), '\..*', ''))
     return $seconds + ($minutes * 60) + ($hours * 60 * 60) + (($daysTillMonth[$month] + $day - 1) * 60 * 60 * 24) + ((($years * 365) + $leapYear) * 60 * 60 * 24) + $leapYearDiff
 };
 
