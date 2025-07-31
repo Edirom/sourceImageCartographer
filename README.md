@@ -65,11 +65,7 @@ If you want to modify the URL that is expected to serve the images you can suppl
 ant xar -Ddigilib.server=HOST:PORT/CONTEXT
 ```
 
-Your "HOST:PORT/CONTEXT" will be prepended to the default `/digilib/Scaler/` context.
-If this does not fit your need in any way and you need a completely different URL for the _digilib_ image server you will have to modify lines 148 and 150 in `tools/main/js/DigilibViewer.js`
-
-https://github.com/Edirom/sourceImageCartographer/blob/develop/tools/main/js/DigilibViewer.js#L148
-https://github.com/Edirom/sourceImageCartographer/blob/develop/tools/main/js/DigilibViewer.js#L150
+The default value is `/digilib/Scaler/`.
 
 # license
 
